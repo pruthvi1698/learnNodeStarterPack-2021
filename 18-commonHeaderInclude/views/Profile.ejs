@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Profile Page</title>
+    </head>
+    <body>
+        <%- include('common/nav') -%>
+        <h1>Hi! <%=name%></h1>
+        <h3>E-Mail: <%= data.email%></h3>
+        <h3>Adress: <%= data.address%> </h3>
+        <h3>Skills:</h3>
+        <ul><% data.skills.forEach(function(item) {%> 
+            <li><%=item%></li>
+            <%})%>
+        </ul>
+    </body>
+</html>
